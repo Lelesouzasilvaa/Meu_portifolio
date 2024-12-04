@@ -1,0 +1,36 @@
+/*estilizações gerais*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* #mesma borda da caixa */
+
+        /* fontes google */
+        
+        
+    }
+    
+    body{
+        background-color: powderblue ;
+        height: 110vh; /*pegar todo o espaço da tela*/
+    }
+
+/*estilizações gerais*/
+
+    .interface{
+        max-width: 1280px; /*tamnho maximo na tela*/
+        margin: 0 auto;
+    }
+
+
+/* estilização do cabeçalho */
+  header{
+    padding: 40px 4%;
+
+  }
+
+  header > .interface{
+    display: flex;
+    align-items: center; /*alinhamento*/
+    justify-content: space-between; /*distancia entre um e outro*/
+  }
+/* estilização do cabeçalho */

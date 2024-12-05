@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /*estilizações gerais*/
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box; /* #mesma borda da caixa */
-
+        font-family: "Poppins";
         /* fontes google */
         
         
     }
     
     body{
-        background-color: powderblue ;
+        background-color: rgba(128, 0, 128, 0.534) ;
         height: 110vh; /*pegar todo o espaço da tela*/
+        
+    }
+
+    .flex{
+      display: flex;
     }
 
 /*estilizações gerais*/
@@ -33,4 +41,82 @@
     align-items: center; /*alinhamento*/
     justify-content: space-between; /*distancia entre um e outro*/
   }
+
+  header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+  }
+  header a:hover{
+    transform: scale(1.05);
+  }
+
+  header nav ul{
+    list-style-type: none;
+  }
+
+  header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+  }
+
+   .btn-contato button{
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+
+  .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #000000;
+  }
 /* estilização do cabeçalho */
+
+
+/* topo do site */
+section.topo-do-site{
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+  align-items: center; 
+  justify-content: center;
+  gap: 90px; /* afastamento dos elementos */
+}
+
+.topo-do-site h1{
+  font-size: 38px;
+  line-height: 40px; /*tamanho do afastamento das linhas*/
+}
+ .topo-do-site h1 span{
+  color: white;
+  
+}
+.topo-do-site .txt-topo-site p{
+  margin: 40px 0;
+}
+#img{
+  width: 300px; /* Defina o tamanho desejado */
+  height: 300px; /* Certifique-se de que largura e altura sejam iguais */
+  border-radius: 50%; /* Faz a borda ficar arredondada em forma de círculo */
+  object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+  box-shadow: 0px 0px 8px #000000;
+ 
+}
+
+.topo-do-site .img-topo-site img{
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* funcao flutuar */
+@keyframes flutuar{
+  0%{
+    top:0
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+/* topo do site */
